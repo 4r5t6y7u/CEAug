@@ -20,19 +20,21 @@
 **2) Result on KITTI dataset**
 
 <div align="center">
-  <img src=![main_table](https://github.com/user-attachments/assets/1e494036-ff6e-4ea9-820d-de5a6681200a)>
->
+  <img src="https://github.com/user-attachments/assets/2c17e76d-089f-4a09-b067-148b8d200f98">
 </div>
-
+[Table 1. Comparison result of depth estimation performance on the KITTI eigen benchmark. In the type, M is monocular, MS is both
+monocular and stereo. The evaluation was conducted at resolutions of 640x192 and 1024x320. The top results are in bold, and the second
+result is underlined.]
 <br>
 <br>
 
 **3) Result on other networks**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d9111839-6ac5-4abf-9b23-6196dfeb1ab6" alt="테이블 2">
+  <img src="https://github.com/user-attachments/assets/bcd1d66f-8637-4017-8c25-0ec38af3be45">
 </div>
-
+[Table 2. Ablation experiment results. Results without * indicate the use of the network or framework, while result with * indicate the
+combined use of the our data augmentation schems.]
 
 # Contents
 1. **[Environment](#Environment)**
@@ -97,19 +99,19 @@ For model evaluation, you should use file `evaluate_depth.py`. Prepare a pretrai
 ```bash
 python evaluate_depth.py
 --kitti_path /your_path/kitti_data
---backbone CE
---pretrained_path /pretrained_file_path/
---height 192 or 320 (Trained input size)
---width 640 or 1024 (Trained input size)
+--backbone CEAug
+--pretrained_path /your_pretrained_file_path/
+--height 192 or 320
+--width 640 or 1024
 ```
 - **Cityscapes**
 ```bash
 python evaluate_depth.py
 --cityscapes_path /your_path/cityscapes/leftImg8bit_sequence_trainvaltest/
---backbone CE
---pretrained_path /pretrained_file_path/
---height 192 (Trained input size)
---width 512 (Trained input size)
+--backbone CEAug
+--pretrained_path /your_pretrained_file_path/
+--height 192
+--width 512
 ```
 
 ## Training
@@ -121,31 +123,32 @@ python train.py
 --data_path your_data_path
 --dataset kitti
 --model_name your_model_name
---backbone CE 
---use_local_crop
---crop_and_wide
+--backbone CEAug_network 
+--local_crop
+--CEAug
 --height 192
 --width 640
 --resume 
 --seed
 ```
 - **Cityscapes**
+(if you use preprocessed Cityscapes dataset, Set the input size to 512x192)
 ```bash
 python train.py 
 --data_path_pre your_preprocessed_data_path
 --data_path_pre_test your_preprocessed_data_path_for_test
 --dataset cityscapes 
 --exp_name your_model_name 
---backbone CE 
---use_local_crop 
---crop_and_wide 
---height 192 (if you use preprocessed Cityscapes dataset, Set the input size to 512x192)
+--backbone CEAug_network 
+--local_crop 
+--CEAug 
+--height 192
 --width 512
 --resume 
 --seed
 ```
 
-Additionally, you can train by changing the depth network as shown in the paper. If you want to change depth network to train, change the `--backbone` option to one of `CE, BDEdepth, resnet, DIFFNet, RAdepth, HRdepth, BRNet, DNAdepth, SwinDepth`. You can use networks that are not on the list by adding them directly. Finally, data augmentation can be chosen for use. Select a data augmentation combination among `--crop_and_wide, --use_local_crop, and --use_patch_reshuffle`.
+Additionally, you can train by changing the depth network as shown in the paper. If you want to change depth network to train, change the `--backbone` option to one of `CEAug_network, BDEdepth, resnet, DIFFNet, RAdepth, HRdepth, BRNet, DNAdepth, SwinDepth`. You can use networks that are not on the list by adding them directly. Finally, data augmentation can be chosen for use. Select a data augmentation combination among `--CEAug, --local_crop, and --patch_reshuffle`.
 
 ## Acknowledgement
 We used great open source projects [Monodepth2](https://github.com/nianticlabs/monodepth2?tab=readme-ov-file), [BDEdepth](https://github.com/LiuJF1226/BDEdepth/tree/master?tab=readme-ov-file#datasets), [Manydepth](https://github.com/nianticlabs/manydepth?tab=readme-ov-file), [RA-Depth](https://github.com/hmhemu/RA-Depth), [DIFFNet](https://github.com/brandleyzhou/DIFFNet), [HR-Depth](https://github.com/shawLyu/HR-Depth), [BRNet](https://github.com/wencheng256/BRNet), [DNA-Depth](https://github.com/boyagesmile/DNA-Depth), [SwinDepth](https://github.com/dsshim0125/SwinDepth). Thank you for the incredible project!
