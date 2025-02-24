@@ -20,7 +20,8 @@
 **2) Result on KITTI dataset**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0e8e8acf-c403-430e-99c1-da2293b2c7ca" alt="테이블 1">
+  <img src=![main_table](https://github.com/user-attachments/assets/1e494036-ff6e-4ea9-820d-de5a6681200a)>
+>
 </div>
 
 <br>
@@ -83,10 +84,10 @@ you can download the ground truth file from the `pretrained weights and evaluati
 We provide the pretrained model weights used in the paper. Click 'Our' on the table below to download and use the corresponding .pth file. And Download hrnet pre-trained .pth file `HRNet-W18-C (w/ CosineLR + CutMix + 300epochs)` with ImageNet [here](https://github.com/HRNet/HRNet-Image-Classification).
 |Model|Dataset|Type|Resolution|Backbone|abs rel|sq rel|rmse|rmse log|a1|a2|a3|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[Our](https://www.dropbox.com/scl/fi/hclcdfdefmii39j0b4lth/CW_640x192_K.pth?rlkey=pwyir8dbi79o0foseuxj29u1a&st=ropegwae&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.170|0.904|0.968|0.985|
-|[Our](https://www.dropbox.com/scl/fi/tljmmp59v8wzwreljqhmq/CW_640x192_K_MS.pth?rlkey=2n58ddzj0e3p43im7wukf8fm4&st=16grsb7e&dl=0)|KITTI|MS|640x192|HRNet18|0.093|0.624|4.138|0.170|0.902|0.968|0.985|
-|[Our](https://www.dropbox.com/scl/fi/nxhymc4ci52hzjc1kggbe/CW_1024x320_K.pth?rlkey=5pgosguc12n6v8427iyhlv0ef&st=luh6f99f&dl=0)|KITTI|M|1024x320|HRNet18|0.091|0.584|4.038|0.166|0.910|0.970|0.986|
-|[Our](https://www.dropbox.com/scl/fi/darr9qmp8gt1bgjpmu4of/CW_512x192_CS.pth?rlkey=9gj7m3royv3dl1jtpee0ev7vx&st=3hu104t5&dl=0)|Cityscapes|M|512x192|HRNet18|0.106|0.970|5.791|0.159|0.880|0.968|0.990|
+|[Our](https://www.dropbox.com/scl/fi/g8zocunr5n74mscmya5es/CEAug_640x192_K.pth?rlkey=q5is0rdx7k8bqn01c3tvfpspc&st=xkx3pu2j&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.170|0.904|0.968|0.985|
+|[Our](https://www.dropbox.com/scl/fi/7arlxqcavmfcl5s6c9bfs/CEAug_640x192_K_MS.pth?rlkey=g2zjzch8d5ef2dtsifw4zmocl&st=3he0s3ed&dl=0)|KITTI|MS|640x192|HRNet18|0.093|0.624|4.138|0.170|0.902|0.968|0.985|
+|[Our](https://www.dropbox.com/scl/fi/np9bjs6mykt69dmn6d482/CEAug_1024x320_K.pth?rlkey=950nshdqs9e5j4eqsj07r4329&st=nml6onna&dl=0)|KITTI|M|1024x320|HRNet18|0.091|0.584|4.038|0.166|0.910|0.970|0.986|
+|[Our](https://www.dropbox.com/scl/fi/bc905h68r3oar84iet4mn/CEAug_512x192_CS.pth?rlkey=i4690qwicc1i8avc8upf23cfi&st=uqams62f&dl=0)|Cityscapes|M|512x192|HRNet18|0.106|0.970|5.791|0.159|0.880|0.968|0.990|
 
 
 ## Evaluation
