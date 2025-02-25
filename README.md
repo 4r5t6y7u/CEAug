@@ -17,14 +17,14 @@
 <br>
 <br>
 
-**2) Result on KITTI dataset**
+**2) Result on KITTI datase**
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2c17e76d-089f-4a09-b067-148b8d200f98">
 </div>
-[Table 1. Comparison result of depth estimation performance on the KITTI eigen benchmark. In the type, M is monocular, MS is both
+Table 1. Comparison result of depth estimation performance on the KITTI eigen benchmark. In the type, M is monocular, MS is both
 monocular and stereo. The evaluation was conducted at resolutions of 640x192 and 1024x320. The top results are in bold, and the second
-result is underlined.]
+result is underlined.
 <br>
 <br>
 
@@ -33,8 +33,8 @@ result is underlined.]
 <div align="center">
   <img src="https://github.com/user-attachments/assets/bcd1d66f-8637-4017-8c25-0ec38af3be45">
 </div>
-[Table 2. Ablation experiment results. Results without * indicate the use of the network or framework, while result with * indicate the
-combined use of the our data augmentation schems.]
+Table 2. Ablation experiment results. Results without * indicate the use of the network or framework, while result with * indicate the
+combined use of the our data augmentation schems.
 
 # Contents
 1. **[Environment](#Environment)**
@@ -86,8 +86,8 @@ you can download the ground truth file from the `pretrained weights and evaluati
 We provide the pretrained model weights used in the paper. Click 'Our' on the table below to download and use the corresponding .pth file. And Download hrnet pre-trained .pth file `HRNet-W18-C (w/ CosineLR + CutMix + 300epochs)` with ImageNet [here](https://github.com/HRNet/HRNet-Image-Classification).
 |Model|Dataset|Type|Resolution|Backbone|abs rel|sq rel|rmse|rmse log|a1|a2|a3|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[Our](https://www.dropbox.com/scl/fi/g8zocunr5n74mscmya5es/CEAug_640x192_K.pth?rlkey=q5is0rdx7k8bqn01c3tvfpspc&st=xkx3pu2j&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.170|0.904|0.968|0.985|
-|[Our](https://www.dropbox.com/scl/fi/7arlxqcavmfcl5s6c9bfs/CEAug_640x192_K_MS.pth?rlkey=g2zjzch8d5ef2dtsifw4zmocl&st=3he0s3ed&dl=0)|KITTI|MS|640x192|HRNet18|0.093|0.624|4.138|0.170|0.902|0.968|0.985|
+|[Our](https://www.dropbox.com/scl/fi/g8zocunr5n74mscmya5es/CEAug_640x192_K.pth?rlkey=q5is0rdx7k8bqn01c3tvfpspc&st=xkx3pu2j&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.171|0.904|0.968|0.985|
+|[Our](https://www.dropbox.com/scl/fi/7arlxqcavmfcl5s6c9bfs/CEAug_640x192_K_MS.pth?rlkey=g2zjzch8d5ef2dtsifw4zmocl&st=3he0s3ed&dl=0)|KITTI|MS|640x192|HRNet18|0.092|0.599|4.086|0.167|0.911|0.969|0.985|
 |[Our](https://www.dropbox.com/scl/fi/np9bjs6mykt69dmn6d482/CEAug_1024x320_K.pth?rlkey=950nshdqs9e5j4eqsj07r4329&st=nml6onna&dl=0)|KITTI|M|1024x320|HRNet18|0.091|0.584|4.038|0.166|0.910|0.970|0.986|
 |[Our](https://www.dropbox.com/scl/fi/bc905h68r3oar84iet4mn/CEAug_512x192_CS.pth?rlkey=i4690qwicc1i8avc8upf23cfi&st=uqams62f&dl=0)|Cityscapes|M|512x192|HRNet18|0.106|0.970|5.791|0.159|0.880|0.968|0.990|
 
