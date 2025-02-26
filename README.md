@@ -125,8 +125,8 @@ python train.py
 --backbone CEAug_network 
 --local_crop
 --CEAug
---height 192
---width 640
+--height 192 or 320
+--width 640 or 1024
 --resume 
 --seed
 ```
