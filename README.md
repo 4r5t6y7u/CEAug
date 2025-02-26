@@ -98,7 +98,7 @@ For model evaluation, you should use file `evaluate_depth.py`. Prepare a pretrai
 ```bash
 python evaluate_depth.py
 --kitti_path /your_path/kitti_data
---backbone CEAug
+--backbone CEAug_network
 --pretrained_path /your_pretrained_file_path/
 --height 192 or 320
 --width 640 or 1024
@@ -107,7 +107,7 @@ python evaluate_depth.py
 ```bash
 python evaluate_depth.py
 --cityscapes_path /your_path/cityscapes/leftImg8bit_sequence_trainvaltest/
---backbone CEAug
+--backbone CEAug_network
 --pretrained_path /your_pretrained_file_path/
 --height 192
 --width 512
