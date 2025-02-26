@@ -63,8 +63,7 @@ You can easily find out how to download from [Monodepth2](https://github.com/nia
 ```bash
 python export_gt_depth.py --data_path /home/datasets/kitti_raw_data --split eigen
 ```
-And if you want to eigen benchmark split, please download from this [link](https://www.dropbox.com/scl/fi/kcytigtuxapp9iv9pgx5s/gt_depths.npz?rlkey=u5yq5pxozl5ytmxev09q7nssa&st=nr4my9tn&dl=0) and Move it to the folder `split/kitti/eigen_benchmark/`.
-
+And if you want to eigen benchmark split, please download from this [link](https://www.dropbox.com/scl/fi/o5u5ed09oqp43kmnmdiec/gt_depths.npz?rlkey=akxiagrh1apal4btwnl7ag2fr&st=9p2pu5x9&dl=0) and Move it to the folder `split/kitti/eigen_benchmark/`.
 
 
 - **Cityscapes**
@@ -81,15 +80,15 @@ python prepare_cityscapes.py \
 ```
 you can download the ground truth file from the `pretrained weights and evaluation` section of [ManyDepth](https://github.com/nianticlabs/manydepth). Unzip it into the folder `split/cityscapes`
  
- 
+
 ## Pretrained
 We provide the pretrained model weights used in the paper. Click 'Our' on the table below to download and use the corresponding .pth file. And Download hrnet pre-trained .pth file `HRNet-W18-C (w/ CosineLR + CutMix + 300epochs)` with ImageNet [here](https://github.com/HRNet/HRNet-Image-Classification).
 |Model|Dataset|Type|Resolution|Backbone|abs rel|sq rel|rmse|rmse log|a1|a2|a3|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[Our](https://www.dropbox.com/scl/fi/g8zocunr5n74mscmya5es/CEAug_640x192_K.pth?rlkey=q5is0rdx7k8bqn01c3tvfpspc&st=xkx3pu2j&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.171|0.904|0.968|0.985|
-|[Our](https://www.dropbox.com/scl/fi/7arlxqcavmfcl5s6c9bfs/CEAug_640x192_K_MS.pth?rlkey=g2zjzch8d5ef2dtsifw4zmocl&st=3he0s3ed&dl=0)|KITTI|MS|640x192|HRNet18|0.092|0.599|4.086|0.167|0.911|0.969|0.985|
-|[Our](https://www.dropbox.com/scl/fi/np9bjs6mykt69dmn6d482/CEAug_1024x320_K.pth?rlkey=950nshdqs9e5j4eqsj07r4329&st=nml6onna&dl=0)|KITTI|M|1024x320|HRNet18|0.091|0.584|4.038|0.166|0.910|0.970|0.986|
-|[Our](https://www.dropbox.com/scl/fi/bc905h68r3oar84iet4mn/CEAug_512x192_CS.pth?rlkey=i4690qwicc1i8avc8upf23cfi&st=uqams62f&dl=0)|Cityscapes|M|512x192|HRNet18|0.106|0.970|5.791|0.159|0.880|0.968|0.990|
+|[Our](https://www.dropbox.com/scl/fi/swxs9vgyzbmybtgcrge68/CEAug_640x192_K.pth?rlkey=8fjyodd4qkngxcc8l3c9t18mg&st=6sp7forf&dl=0)|KITTI|M|640x192|HRNet18|0.094|0.618|4.198|0.171|0.904|0.968|0.985|
+|[Our](https://www.dropbox.com/scl/fi/pnf61tksluqu521lb371s/CEAug_640x192_K_MS.pth?rlkey=clls7a19op35gj7199pa9ghav&st=4b17onbl&dl=0)|KITTI|MS|640x192|HRNet18|0.092|0.599|4.086|0.167|0.911|0.969|0.985|
+|[Our](https://www.dropbox.com/scl/fi/7ljg8oxfmxnoyc528l6oy/CEAug_1024x320_K.pth?rlkey=90bsu5hicpq42mws1rg8a3dhe&st=7v9tsm1f&dl=0)|KITTI|M|1024x320|HRNet18|0.091|0.584|4.038|0.166|0.910|0.970|0.986|
+|[Our](https://www.dropbox.com/scl/fi/z780zsvzi9w3pumr4nazm/CEAug_512x192_CS.pth?rlkey=kyo8vpnfu4fe3e4yxrs85bbmf&st=ucg27bxo&dl=0)|Cityscapes|M|512x192|HRNet18|0.106|0.970|5.791|0.159|0.880|0.968|0.990|
 
 
 ## Evaluation
