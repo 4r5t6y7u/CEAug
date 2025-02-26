@@ -147,7 +147,7 @@ python train.py
 --seed
 ```
 
-Additionally, you can train by changing the depth network as shown in the paper. If you want to change depth network to train, change the `--backbone` option to one of `CEAug_network, BDEdepth, resnet, DIFFNet, RAdepth, HRdepth, BRNet, DNAdepth, SwinDepth`. You can use networks that are not on the list by adding them directly. Finally, data augmentation can be chosen for use. Select a data augmentation combination among `--CEAug, --local_crop, and --patch_reshuffle`.
+Additionally, you can train by changing the depth network as shown in the paper. If you want to change depth network to train, change the `--backbone` option to one of `CEAug_network, ResNet, HRNet, DIFFNet, RAdepth, HRdepth, BRNet, DNAdepth, SwinDepth`. You can use networks that are not on the list by adding them directly. Finally, data augmentation can be chosen for use. Select a data augmentation combination among `--CEAug, --local_crop, and --patch_reshuffle`.
 
 ## Acknowledgement
 We used great open source projects [Monodepth2](https://github.com/nianticlabs/monodepth2?tab=readme-ov-file), [BDEdepth](https://github.com/LiuJF1226/BDEdepth/tree/master?tab=readme-ov-file#datasets), [Manydepth](https://github.com/nianticlabs/manydepth?tab=readme-ov-file), [RA-Depth](https://github.com/hmhemu/RA-Depth), [DIFFNet](https://github.com/brandleyzhou/DIFFNet), [HR-Depth](https://github.com/shawLyu/HR-Depth), [BRNet](https://github.com/wencheng256/BRNet), [DNA-Depth](https://github.com/boyagesmile/DNA-Depth), [SwinDepth](https://github.com/dsshim0125/SwinDepth). Thank you for the incredible project!
