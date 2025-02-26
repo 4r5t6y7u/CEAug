@@ -1,10 +1,9 @@
 <div align="center">
   <h1>CEAug: Crop-Expand Data Augmentation for
   <br>Self-Supervised Monocular Depth Estimation
-  <br>[Paper Link].</h1>
-  <p>Paper ID </p>
-  <img src="https://github.com/user-attachments/assets/ad9c5e44-883e-48d6-ac04-295d702d4c58" alt="output_stacked_video_3">
+  <br>[Paper ID: 5586].</h1>
 </div>
+<br>
 
     
 # **Overview & Quantitative Result**
@@ -12,10 +11,11 @@
 **1) Overview**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/92fd8845-8acf-41ad-afda-906eaabc3b01" alt="그림1">
+  <img src="https://github.com/user-attachments/assets/cd00fb19-8305-43c3-9c53-65e017dae369" alt="그림1">
 </div>
 <br>
 <br>
+
 
 **2) Result on KITTI datase**
 
