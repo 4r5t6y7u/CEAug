@@ -123,8 +123,8 @@ python train.py
 --dataset kitti
 --model_name your_model_name
 --backbone CEAug_network 
---local_crop
 --CEAug
+--local_crop
 --height 192 or 320
 --width 640 or 1024
 --resume 
@@ -139,8 +139,8 @@ python train.py
 --dataset cityscapes 
 --exp_name your_model_name 
 --backbone CEAug_network 
---local_crop 
---CEAug 
+--CEAug
+--local_crop  
 --height 192
 --width 512
 --resume 
