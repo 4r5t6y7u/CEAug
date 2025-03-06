@@ -11,7 +11,7 @@
 **1) Overview**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/cd00fb19-8305-43c3-9c53-65e017dae369" alt="그림1">
+  <img src="https://github.com/user-attachments/assets/f8f2dbd3-e71a-4764-a2f0-325eb2484f54" alt="그림1">
 </div>
 <br>
 <br>
@@ -22,9 +22,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2c17e76d-089f-4a09-b067-148b8d200f98">
 </div>
-Table 1. Comparison result of depth estimation performance on the KITTI eigen benchmark. In the type, M is monocular, MS is both
-monocular and stereo. The evaluation was conducted at resolutions of 640x192 and 1024x320. The top results are in bold, and the second
-result is underlined.
 <br>
 <br>
 
@@ -33,8 +30,6 @@ result is underlined.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/bcd1d66f-8637-4017-8c25-0ec38af3be45">
 </div>
-Table 2. Ablation experiment results. Results without * indicate the use of the network or framework, while result with * indicate the
-combined use of the our data augmentation schems.
 
 # Contents
 1. **[Environment](#Environment)**
