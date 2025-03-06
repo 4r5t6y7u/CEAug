@@ -1,7 +1,7 @@
 <div align="center">
   <h1>CEAug: Crop-Expand Data Augmentation for
   <br>Self-Supervised Monocular Depth Estimation
-  <br>[Paper ID: 5586]</h1>
+<!--   <br>[Paper ID: 5586]</h1> -->
 </div>
 <br>
 
