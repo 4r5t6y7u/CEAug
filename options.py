@@ -58,7 +58,7 @@ parser.add_argument("--split",
 parser.add_argument("--backbone",
                     type=str,
                     help="backbone of depth encoder",
-                    default="hrnet",
+                    default="CEAug_network",
                     choices=["CEAug_network", "ResNet", "BDEdepth_HRNet", "DIFFNet", "RAdepth", "HRdepth", "BRNet", "DNAdepth", "SwinDepth"])
 parser.add_argument("--num_layers",
                     type=int,
